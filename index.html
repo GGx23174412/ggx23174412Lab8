@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 Lab - Rock Papper Scissors</title>
+    <meta name="author" content="Gonzalo Guerra">
+    <!-- Include Bootstrap via CDN - https://getbootstrap.com/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Add css last to override Bootstrap -->
+    <link rel="stylesheet" href="styles\style.css" />
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Rock Papper Scissors</h1>
+        <p>Welcome to my rock papper scissors website!</p>
+    </div>
+    <div class="container wrapper text-center">
+        <div class="row">
+            <div class="col">
+                <form class="mb-5">
+                    <label class="mb-2" for="formPlayer">Choose your next play:</label><br>
+                    <select id="formPlayer" name="formPlayer" size="1">
+                        <option value="rock" selected>Rock</option>
+                        <option value="papper">Papper</option>
+                        <option value="scissors">Scissors</option>
+                    </select>
+                </form>
+                <button class="shootButton mb-5" type="button" onclick=playGame()>Shoot!</button>
+                <p class="mb-5">Games played: <span id="gameCounter">0</span></p> 
+            </div>
+        </div>
+        <div class="row resultBanner">
+            <div class="col">
+                <p>You play: <span id="playerChoice"></span></p>
+            </div>
+            <div class="col">
+                <p id="result">Press 'Shoot!' to play</p>
+            </div>
+            <div class="col">
+                <p>CPU plays: <span id="cpuChoice"></span></p>
+            </div>
+        </div>
+        <div class="row scoreBanner align-items-center">
+            <div class="col"> 
+                <p>Your score: <span id="playerScore">0</span></p>
+            </div>
+            <div class="col">
+                <button class="resetButton" type="button" onclick=resetScore()>Reset score</button> 
+            </div>
+            <div class="col">
+                <p>CPU score: <span id="cpuScore">0</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- javascript files -->
+    <script src="script.js"></script>
+</body>
+</html>

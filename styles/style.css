@@ -1,0 +1,38 @@
+body{
+    background-color: darkslategray;
+    color:lightgray;
+}
+
+h1{
+    color: white;
+}
+
+.wrapper{
+    color:dimgrey;
+    border-style: solid;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.shootButton {
+    width:200px;
+    height: 80px;
+    background-color: #fdd711;
+    border-radius: 15px;
+    font-size: 1.5em;
+    line-height: 80px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    cursor: pointer;
+}
+
+#result{
+    font-weight: bold;
+}
+
+.scoreBanner{
+    background-color: black;
+    color: white;
+}
